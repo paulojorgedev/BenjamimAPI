@@ -18,10 +18,14 @@ app.listen(port, function() {
     console.log('Servidor rodando na porta 8000..');
 });
 
+app.get('/', function(req, res) {  
+    res.send("hello");
+});
+
 app.get('/joke', function(req, res) {  
   var index = Math.floor(Math.random() * 4);
   console.log("joke id: ", index);
-  res.send(JSON.stringify(jokes[index]));
+  res.send("hi");
 });
 
 
