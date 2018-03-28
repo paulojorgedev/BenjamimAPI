@@ -38,12 +38,12 @@ var x =   new Date().getWeekNumber() % 4 ;
               "Limpeza geral do banheiro",
               "Nenhuma"
             ];
-var JSON0 = "{
+var JSON0 = {
     Paulo:tarefas[0],
     Ana:tarefas[1],
     Mãe:tarefas[2],
     Pai:tarefas[3]
-}";
+};
 var JSON1 = {
     Paulo:tarefas[3],
     Ana:tarefas[0],
