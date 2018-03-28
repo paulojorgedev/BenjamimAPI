@@ -1,13 +1,13 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-var jsonfile = require('jsonfile')
+/*var jsonfile = require('jsonfile')
 
 var file = './data/jokes.json';
 var jokes;
 jsonfile.readFile(file, function(err, obj) {
   console.log("Json file read");
   jokes = obj;
-})
+})*/
 
 var app = express();
 
@@ -23,12 +23,12 @@ app.get('/', function(req, res) {
 });
 
 app.get('/joke', function(req, res) {  
-  var index = Math.floor(Math.random() * 4);
-  console.log("joke id: ", index);
+  //var index = Math.floor(Math.random() * 4);
+  //console.log("joke id: ", index);
   res.send("hi");
 });
 
-
+/*
 app.get('/joke/:jokeid', function(req, res) {
   console.log("joke id parameter: ", parseInt(req.params.jokeid) - 1);
 
@@ -39,6 +39,6 @@ app.get('/joke/:jokeid', function(req, res) {
     res.send("Está piada não existe! :/");
   }
   
-});
+});*/
 
   
