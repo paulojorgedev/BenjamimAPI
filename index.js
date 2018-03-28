@@ -67,7 +67,7 @@ var JSON3 = {
 switch(x){
  case 1:
     app.get('/', function(req,res){
-   res.send("JSON1"); 
+   res.send(JSON.stringify(JSON1)); 
 });
                                         
  break;
