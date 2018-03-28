@@ -44,48 +44,48 @@ var JSON0 = "{
     Mãe:tarefas[2],
     Pai:tarefas[3]
 }";
-var JSON1 = "{
+var JSON1 = {
     Paulo:tarefas[3],
     Ana:tarefas[0],
     Mãe:tarefas[1],
     Pai:tarefas[2]
-}";
-var JSON2 = "{
+};
+var JSON2 = {
     Paulo:tarefas[2],
     Ana:tarefas[3],
     Mãe:tarefas[0],
     Pai:tarefas[1]
-}";
-var JSON3 = "{
+};
+var JSON3 = {
     Paulo:tarefas[1],
     Ana:tarefas[2],
     Mãe:tarefas[3],
     Pai:tarefas[0]
-}";
+};
 
 
 switch(x){
  case 1:
     app.get('/', function(req,res){
-   res.send(JSON1); 
+   res.send("JSON1"); 
 });
                                         
  break;
  case 2:
         app.get('/', function(req,res){
-   res.send(JSON2); 
+   res.send("JSON2"); 
 });
                  
  break;
  case 3:
         app.get('/', function(req,res){
-   res.send(JSON3); 
+   res.send("JSON3"); 
 });
                     
  break;
  case 0:
         app.get('/', function(req,res){
-   res.send(JSON0); 
+   res.send("JSON0"); 
 });
         
  break;
