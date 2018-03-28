@@ -12,11 +12,6 @@ app.listen(port, function() {
 });
 
 
-
-app.get('/joke', function(req, res) {  
- res.send("hi");
-});
-
 Date.prototype.getWeekNumber = function(){
  var d = new Date();
  var dayNum = d.getUTCDay() || 7;
@@ -38,6 +33,7 @@ var x =   new Date().getWeekNumber() % 4 ;
               "Limpeza geral do banheiro",
               "Nenhuma"
             ];
+
 var JSON0 = {
     Paulo:tarefas[0],
     Ana:tarefas[1],
@@ -63,33 +59,23 @@ var JSON3 = {
     Pai:tarefas[0]
 };
 
+app.get('/',function(req,res){
+ switch(x){
+    case 1:
+        res.send(JSON.stringify(JSON1)); 
+    break;
+    case 2:
+        res.send(JSON.stringify(JSON2)); 
+    break;
+    case 3:
+        res.send(JSON.stringify(JSON3)); 
+    break;
+    case 0:
+        res.send(JSON.stringify(JSON0)); 
+    break;
+ };
+});
 
-switch(x){
- case 1:
-    app.get('/', function(req,res){
-   res.send(JSON.stringify(JSON1)); 
-});
-                                        
- break;
- case 2:
-        app.get('/', function(req,res){
-   res.send("JSON2"); 
-});
-                 
- break;
- case 3:
-        app.get('/', function(req,res){
-   res.send("JSON3"); 
-});
-                    
- break;
- case 0:
-        app.get('/', function(req,res){
-   res.send("JSON0"); 
-});
-        
- break;
-                    
-};
+
 
   
