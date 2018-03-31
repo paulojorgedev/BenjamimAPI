@@ -1,5 +1,3 @@
-# api-node
+# BenjamimAPI
 
-Simple API that returns a joke in the route /joke, this api is for purpose of the course Maratona Bots.
-
-https://api-node-malfatti.azurewebsites.net/joke# TestBots
+API que retorna as tarefas domésticas de cada um aqui de casa
